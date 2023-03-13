@@ -24,6 +24,7 @@ class FindingRow extends Component {
       <MaterialTable
         title="Findings"
         options={{
+          actionsColumnIndex: -1,
           search: false,
           paging: false,
         }}
