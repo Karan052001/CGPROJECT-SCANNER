@@ -6,7 +6,6 @@ import { ActionCreators } from '../store/actions';
 import { Link } from 'react-router-dom';
 
 import Button from '@material-ui/core/Button';
-import Badge from '@material-ui/core/Badge';
 import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
 
 import MaterialTable from 'material-table';
@@ -55,10 +54,7 @@ class ResultListScreen extends Component {
           { title: 'Repo Name (Findings)', field: 'repositoryName', cellStyle: { width: '50%' }, render:
             rowData => <div>
               <span children={rowData.repositoryName} style={{ marginRight: '15px' }}/>
-              {rowData.findingCount
-                ? <Badge badgeContent={rowData.findingCount} color="error" /> 
-                : null
-              }
+              
             </div>
           },
           { title: 'Status', field: 'status', cellStyle: { width: '10%' } },

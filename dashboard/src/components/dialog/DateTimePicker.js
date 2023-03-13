@@ -38,7 +38,7 @@ class DateTimePicker extends Component {
           aria-labelledby="alert-dialog-title"
           aria-describedby="alert-dialog-description"
         >
-          <DialogTitle id="time-picker">Select a date time</DialogTitle>
+          <DialogTitle id="time-picker">Select date and time</DialogTitle>
           <DialogContent>
             <Picker
               onChange={(event, value) => this.setState({dateTime: event.format('YYYY-MM-DD HH:mm:ss')})}
