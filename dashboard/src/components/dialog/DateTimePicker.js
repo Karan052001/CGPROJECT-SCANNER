@@ -31,7 +31,7 @@ class DateTimePicker extends Component {
 
     return (
       <div>
-        <Button aria-label="dateRange" onClick={handleOpen}><DateRangeIcon/></Button>
+        <Button aria-label="dateRange" onClick={handleOpen}><AccessTimeIcon/></Button>
         <Dialog
           open={this.state.open}
           onClose={handleClose}
